@@ -1,236 +1,279 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    color: var(--primary-color);
-    font-family: 'Heebo', sans-serif;
-    background-color: #F6DAC6;
-}
-
- :root {
-    --primary-color: #C6E2F6;
-    --secondary-color: #888C8E;
-    --tertiary-color: #3B2020;
-}
-
-
-/* HEADER / NAV BAR STYLES START */
-
-header {
-    padding: 20px 35px;
-    background-image: url(https://i.imgur.com/FsZJHl1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    background-position: 50%;
-}
-
-header h1 a {
-    text-decoration: none;
-    color: var(--primary-color)
-}
-
-header nav {
-    margin: 7px 0;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    list-style: none;
-}
-
-header h1 {
-    font-size: 35px;
-    text-shadow: 2px 2px rgba(198, 226, 246, 0.5);
-}
-
-header nav ul li a {
-    padding: 10px 15px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--primary-color)
-}
-
-.hero {
-    background-image: url(https://i.imgur.com/OnP3t0R.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 100%;
-    padding-bottom: 150px;
-}
-
-.hero-blurb {
-    margin: 3.5%;
-    text-align: justify;
-    width: 45%;
-    padding: 20px 10px;
-}
-
-.hero-blurb p {
-    line-height: 1.6;
-}
-
-.hero h1 {
-    font-size: 35px;
-    text-shadow: 2px 2px rgba(198, 226, 246, 0.5);
-}
-
-aside img {
-    border-radius: 50%;
-    object-fit: cover;
-    height: 400px;
-    width: 400px;
-    object-position: 20% 1%;
-    padding: 50px;
-}
-
-aside h1 {
-    position: relative;
-}
-
-.hero-name {
-    position: absolute;
-}
-
-.contact-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 700px 0 700px;
-}
-
-.contact-buttons button {
-    border: none;
-    padding: 10px 20px;
-    background-color: transparent;
-    border-radius: 50%;
-}
-
-.contact-logo {
-    max-width: 30px;
-    height: 30px;
-}
-
-.folio-links {
-    margin: 0 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.folio-button:hover .folio-button:focus .folio-button:active {
-    margin: 40px;
-    flex: 1.5;
-    background-color: #F6DAC6;
-}
-
-.folio-button button {
-    border: none;
-    background-color: #F6DAC6;
-}
-
-.folio-button img {
-    width: 200px;
-    height: 200px;
-    background-color: #F6DAC6;
-    margin-bottom: -15px;
-    margin-top: 25px;
-}
-
-.folio-button h2 {
-    padding-left: 80px;
-    color: #888C8E;
-}
-
-#run-buddy h2 {
-    padding-left: 40px;
-    color: #888C8E;
-}
-
-.contact-info h3 {
-    padding-left: 50px;
-    color: #3B2020;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 45px;
-    margin-bottom: 15px;
-    ;
-}
-
-.folio-button button {
-    transition: 0.5s;
-}
-
-.folio-button button:hover {
-    transform: scale(0.95);
-}
-
-.contact-buttons button:hover {
-    transform: scale(1.2);
-    transition: all ease 500ms;
-}
-
-a {
-    display: inline-block;
-    line-height: -1;
-}
-
-.wordpress {
-    display: flex;
-    justify-content: center;
-    color: var(--tertiary-color);
-    font-size: 25px;
-}
-
-.blog-url h3 {
-    position: absolute;
-    padding: 25px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    padding: 75px;
-    margin: 70px;
-    left: -85px;
-}
-
-iframe {
-    border-radius: 5%;
-    justify-content: center;
-    margin-top: 45px;
-    margin-bottom: 45px;
-    border-color: #f7ea5c;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 10%;
-}
-
-@media screen and (max-width: 980px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        color: var(--primary-color);
+        font-family: 'Heebo', sans-serif;
+        background-color: #F6DAC6;
+    }
+    
+     :root {
+        --primary-color: #C6E2F6;
+        --secondary-color: #888C8E;
+        --tertiary-color: #3B2020;
+    }
+    /* HEADER / NAV BAR STYLES START */
+    
     header {
-        width: 150%;
-        margin: -1%;
+        padding: 20px 35px;
+        background-image: url(https://i.imgur.com/FsZJHl1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        background-position: 50%;
     }
+    
+    header h1 a {
+        text-decoration: none;
+        color: var(--primary-color)
+    }
+    
+    header nav {
+        margin: 7px 0;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        list-style: none;
+    }
+    
     header h1 {
-        padding-left: 55px;
+        font-size: 35px;
+        text-shadow: 2px 2px rgba(198, 226, 246, 0.5);
     }
+    
+    header nav ul li a {
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--primary-color)
+    }
+    
     .hero {
-        width: 175%;
-        margin: .1%;
+        background-image: url(https://i.imgur.com/OnP3t0R.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background-attachment: fixed;
+        background-position: 100%;
+        padding-bottom: 150px;
     }
-    .hero-right img {
+    
+    .hero-blurb {
+        margin: 3.5%;
+        text-align: justify;
+        width: 45%;
+        padding: 20px 10px;
+    }
+    
+    .hero-blurb p {
+        line-height: 1.6;
+    }
+    
+    .hero h1 {
+        font-size: 35px;
+        text-shadow: 2px 2px rgba(198, 226, 246, 0.5);
+    }
+    
+    aside img {
+        border-radius: 50%;
+        object-fit: cover;
+        height: 400px;
+        width: 400px;
+        object-position: 20% 1%;
+        padding: 50px;
+    }
+    
+    aside h1 {
         position: relative;
-        right: 3em;
     }
-}
+    
+    .hero-name {
+        position: absolute;
+    }
+    
+    .contact-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 700px 0 700px;
+    }
+    
+    .contact-buttons button {
+        border: none;
+        padding: 10px 20px;
+        background-color: transparent;
+        border-radius: 50%;
+    }
+    
+    .contact-logo {
+        max-width: 30px;
+        height: 30px;
+    }
+    
+    .folio-links1, .folio-links2 {
+        margin: 0 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .folio-button:hover .folio-button:focus .folio-button:active {
+        margin: 40px;
+        flex: 1.5;
+        background-color: #F6DAC6;
+    }
+    
+    .folio-button button {
+        border: none;
+        background-color: #F6DAC6;
+    }
+    
+    .folio-button img {
+        width: 200px;
+        height: 200px;
+        background-color: #F6DAC6;
+        margin-bottom: -15px;
+        margin-top: 25px;
+    }
+    
+    .folio-button h2 {
+        padding-left: 80px;
+        color: #888C8E;
+    }
+    
+    #run-buddy h2 {
+        padding-left: 40px;
+        color: #888C8E;
+    }
+    
+    .contact-info h3 {
+        padding-left: 50px;
+        color: #3B2020;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 45px;
+        margin-bottom: 15px;
+        ;
+    }
+    
+    .folio-button button {
+        transition: 0.5s;
+    }
+    
+    .folio-button button:hover {
+        transform: scale(0.95);
+    }
+    
+    .contact-buttons button:hover {
+        transform: scale(1.2);
+        transition: all ease 500ms;
+    }
+    
+    a {
+        display: inline-block;
+        line-height: -1;
+    }
+    
+    .wordpress {
+        display: flex;
+        justify-content: center;
+        color: var(--tertiary-color);
+        font-size: 25px;
+    }
+    
+    .blog-url h3 {
+        position: absolute;
+        padding: 25px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding: 75px;
+        margin: 70px;
+        left: -85px;
+    }
+    
+    iframe {
+        border-radius: 5%;
+        justify-content: center;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        border-color: #f7ea5c;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 10%;
+        width:1000px;
+        height: 300;
+    }
+    
+    @media screen and (max-width: 980px) {
+        header {
+            width: 180%;
+            margin: -1%;
+            background-position: 95%;
+        }
+        header h1 {
+            padding-left: 2em;
+        }
+        .hero {
+            width: 175%;
+            padding-right: 20%;
+        }
+        .hero-right img {
+            position: relative;
+            left: 2em;
+        }
+        .navbar { 
+           position: relative;
+        } 
+
+        #my-work.folio-links1, #my-work2.folio-links2 {
+            display: grid;
+            gap: 2rem;
+            grid-auto-flow: column;
+            padding-left: 65%;
+        }
+
+        .blog-url h3 {
+        text-align: center;
+        left: 60%;
+        top: 120%;
+        white-space: nowrap;
+        }
+
+        .iframeurl{
+          padding-left: 70%;
+          padding-top: 4em;
+        }
+
+        .contact-info h3  {
+            padding-left: 65%;
+        }
+
+        .contact-buttons {
+            padding-left: 82%;  
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .blog-url h3 {
+            top: 150%;
+        }
+    }
+
+
+
+        
+    
