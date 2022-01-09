@@ -19,5 +19,5 @@ So, if you play around with the responsiveness on chromedev, I think it's pretty
 Thanks for taking the time to look around! I appreciate the feedback.
 
 https://swyner97.github.io/my-portfolio/
-![webpage img] (https://github.com/swyner97/my-portfolio/blob/main/assets/Screenshot%20(25).png?raw=true)
-![webpage img] (https://github.com/swyner97/my-portfolio/blob/main/assets/Screenshot%20(27).png?raw=true)
+<img src= https://github.com/swyner97/my-portfolio/blob/main/assets/Screenshot%20(25).png?>
+<img src= https://github.com/swyner97/my-portfolio/blob/main/assets/Screenshot%20(27).png?>
