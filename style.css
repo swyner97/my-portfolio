@@ -18,7 +18,6 @@
     /* HEADER / NAV BAR STYLES START */
     
     header {
-        width:100%;
         padding: 20px 35px;
         background-image: url(https://i.imgur.com/FsZJHl1.jpg);
         background-size: cover;
@@ -60,7 +59,9 @@
         text-decoration: none;
         color: var(--primary-color)
     }
-    
+
+    /* JUMBOTRON STYLES START */
+
     .hero {
         background-image: url(https://i.imgur.com/OnP3t0R.jpg);
         background-size: cover;
@@ -107,6 +108,8 @@
     .hero-name {
         position: absolute;
     }
+
+    /* FOOTER & CONTACT STYLES */
     
     .contact-buttons {
         display: flex;
@@ -125,6 +128,27 @@
         max-width: 30px;
         height: 30px;
     }
+
+    .contact-info h3 {
+        color: #3B2020;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 45px;
+        margin-bottom: 15px;
+        ;
+    }
+
+    .contact-buttons {
+        display: flex; 
+        justify-content: center;
+    }
+    
+    .contact-buttons button:hover {
+        transform: scale(1.2);
+        transition: all ease 500ms;
+    }
+
+    /* PORTFOLIO LINK STYLES */
     
     .folio-links1, .folio-links2 {
         margin: 0 200px;
@@ -162,15 +186,7 @@
         color: #888C8E;
     }
     
-    .contact-info h3 {
-        color: #3B2020;
-        font-size: 25px;
-        text-align: center;
-        margin-top: 45px;
-        margin-bottom: 15px;
-        ;
-    }
-    
+   
     .folio-button button {
         transition: 0.5s;
     }
@@ -178,21 +194,13 @@
     .folio-button button:hover {
         transform: scale(0.95);
     }
-
-    .contact-buttons {
-        display: flex; 
-        justify-content: center;
-    }
-    
-    .contact-buttons button:hover {
-        transform: scale(1.2);
-        transition: all ease 500ms;
-    }
     
     a {
         display: inline-block;
         line-height: -1;
     }
+
+    /* BLOG STYLES */
     
     .wordpress {
         display: flex;
@@ -203,7 +211,7 @@
     }
 
     .iframeurl {
-        margin-left: 20%;
+        margin-left: 19%;
     }
 
     .blog-url {
@@ -223,6 +231,8 @@
         width:1000px;
         height: 300;
     }
+
+    /* MEDIA QUERIES */
 
     @media screen and (max-width: 980px) {
         header {
@@ -354,99 +364,3 @@
         }
 
     }
-
-
-    /* @media screen and (min-width: 768px) {
-        header {
-            background-position-y: 100%;
-        }
-    } */
-    
-    /* @media screen and (min-width: 980px) {
-        header {
-            width: 180%;
-            margin: -1%;
-            background-position: 95%;
-            
-        }
-        header h1 {
-            padding-left: 2em;
-        }
-        .hero {
-            width: 185%;
-            padding-right: 20%;
-
-        }
-        .hero-right img {
-            position: relative;
-            left: 2em;
-        }
-    
-        #my-work.folio-links1, #my-work2.folio-links2 {
-            display: grid;
-            gap: 2rem;
-            grid-auto-flow: column;
-            padding-left: 65%;
-        }
-
-        .blog-url h3 {
-        text-align: center;
-        left: 60%;
-        top: 125%;
-        white-space: nowrap;
-        }
-
-        .iframeurl{
-          padding-left: 70%;
-          padding-top: 4em;
-        }
-
-        .contact-info h3  {
-            padding-left: 65%;
-        }
-
-        .contact-buttons {
-            padding-left: 82%;  
-        }
-    }
-
-
-    @media screen and (max-width: 375px) {
-
-      header {
-          margin: 0;
-          width: 190%;
-      } 
-
-      .hero {
-          width: 190%;
-      }
-
-     .navbar {
-        margin-right: 15%;
-     }
-
-     #my-work.folio-links1, #my-work2.folio-links2 {
-         padding-left: 75%;
-     }
-
-     .iframeurl {
-         margin-left: -10%;
-     }
-
-     .contact-info {
-         padding-left: 40%;
-     }
-
-     .blog-url h3{
-         top: 50%;
-     }
-
-     
-
-
-   
-
-
-        
-     */
