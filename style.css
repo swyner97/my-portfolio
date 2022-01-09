@@ -217,7 +217,7 @@
         height: 300;
     }
     
-    @media screen and (min-width: 980px) {
+    @media screen and (max-width: 980px) {
         header {
             width: 180%;
             margin: -1%;
@@ -265,10 +265,32 @@
         }
     }
 
-    /* @media screen and (max-width: 768px) {
-        .hero {
-            padding-left: 0;
-        } */
+    @media screen and (min-width: 768px) {
+        .blog-url h3 {
+            top: 98%;
+            left: 57%;
+        }
+    }
+
+    @media screen and (min-width: 375px) {
+     .navbar {
+        padding-right: 15%;
+     }
+
+     #my-work.folio-links1, #my-work2.folio-links2, .iframeurl,{
+         padding-left: 50%;
+         padding-left: 50%;
+     }
+
+     .contact-info {
+         padding-right: 10%;
+     }
+
+     .blog-url h3{
+         top:50%;
+     }
+
+     
 
 
    
