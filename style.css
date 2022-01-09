@@ -217,27 +217,26 @@
         height: 300;
     }
     
-    @media screen and (max-width: 980px) {
+    @media screen and (min-width: 980px) {
         header {
             width: 180%;
             margin: -1%;
             background-position: 95%;
+            
         }
         header h1 {
             padding-left: 2em;
         }
         .hero {
-            width: 175%;
+            width: 185%;
             padding-right: 20%;
+
         }
         .hero-right img {
             position: relative;
             left: 2em;
         }
-        .navbar { 
-           position: relative;
-        } 
-
+    
         #my-work.folio-links1, #my-work2.folio-links2 {
             display: grid;
             gap: 2rem;
@@ -248,7 +247,7 @@
         .blog-url h3 {
         text-align: center;
         left: 60%;
-        top: 120%;
+        top: 125%;
         white-space: nowrap;
         }
 
@@ -266,13 +265,13 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
+        .hero {
+            padding-left: 0;
+        } */
 
-        .blog-url h3 {
-            top: 150%;
-        }
-    }
 
+   
 
 
         
