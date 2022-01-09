@@ -278,14 +278,18 @@
         }
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (min-width: 375px) {
      .navbar {
-        padding-right: 15%;
+        margin-right: 15%;
      }
 
-     #my-work.folio-links1, #my-work2.folio-links2, .iframeurl {
-         padding-left: 50%;
-         padding-left: 50%;
+     #my-work.folio-links1, #my-work2.folio-links2 {
+         padding-left: 55%;
+         padding-left: 55%;
+     }
+
+     .iframeurl {
+         margin-left: -65%;
      }
 
      .contact-info {
@@ -293,7 +297,7 @@
      }
 
      .blog-url h3{
-         top:50%;
+         top: 50%;
      }
 
      
