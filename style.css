@@ -1,366 +1,366 @@
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        color: var(--primary-color);
-        font-family: 'Heebo', sans-serif;
-        background-color: #F6DAC6;
-    }
-    
-     :root {
-        --primary-color: #C6E2F6;
-        --secondary-color: #888C8E;
-        --tertiary-color: #3B2020;
-    }
-    /* HEADER / NAV BAR STYLES START */
-    
-    header {
-        padding: 20px 35px;
-        background-image: url(https://i.imgur.com/FsZJHl1.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        position: sticky;
-        top: 0;
-        background-position-y: 100%;
-    }
-    
-    header h1 a {
-        text-decoration: none;
-        color: var(--primary-color)
-    }
-    
-    header nav {
-        margin: 7px 0;
-    }
-    
-    header nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-end;
-        list-style: none;
-    }
-    
-    header h1 {
-        font-size: 35px;
-        text-shadow: 2px 2px rgba(198, 226, 246, 0.5);
-    }
-    
-    header nav ul li a {
-        padding: 10px 15px;
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: none;
-        color: var(--primary-color)
-    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    /* JUMBOTRON STYLES START */
+body {
+    color: var(--primary-color);
+    font-family: 'Heebo', sans-serif;
+    background-color: #F6DAC6;
+}
+
+ :root {
+    --primary-color: #C6E2F6;
+    --secondary-color: #888C8E;
+    --tertiary-color: #3B2020;
+}
+/* HEADER / NAV BAR STYLES START */
+
+header {
+    padding: 20px 35px;
+    background-image: url(https://i.imgur.com/FsZJHl1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-position-y: 100%;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+}
+
+header h1 {
+    font-size: 35px;
+    text-shadow: 2px 2px rgba(198, 226, 246, 0.5);
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+/* JUMBOTRON STYLES START */
+
+.hero {
+    background-image: url(https://i.imgur.com/OnP3t0R.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 100%;
+    background-position-y: 100%;
+    padding-bottom: 150px;
+}
+
+.hero-blurb {
+    margin: 3.5%;
+    text-align: justify;
+    width: 45%;
+    padding: 20px 10px;
+}
+
+.hero-blurb p {
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.hero h1 {
+    font-size: 35px;
+    text-shadow: 2px 2px rgba(198, 226, 246, 0.5);
+}
+
+aside img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+    object-position: 20% 1%;
+    padding: 50px;
+}
+
+aside h1 {
+    position: relative;
+}
+
+.hero-name {
+    position: absolute;
+}
+
+/* FOOTER & CONTACT STYLES */
+
+.contact-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 700px 0 700px;
+}
+
+.contact-buttons button {
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.contact-logo {
+    max-width: 30px;
+    height: 30px;
+}
+
+.contact-info h3 {
+    color: #3B2020;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 15px;
+    ;
+}
+
+.contact-buttons {
+    display: flex; 
+    justify-content: center;
+}
+
+.contact-buttons button:hover {
+    transform: scale(1.2);
+    transition: all ease 500ms;
+}
+
+/* PORTFOLIO LINK STYLES */
+
+.folio-links1, .folio-links2 {
+    margin: 0 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.folio-button:hover .folio-button:focus .folio-button:active {
+    margin: 40px;
+    flex: 1.5;
+    background-color: #F6DAC6;
+}
+
+.folio-button button {
+    border: none;
+    background-color: #F6DAC6;
+}
+
+.folio-button img {
+    width: 200px;
+    height: 200px;
+    background-color: #F6DAC6;
+    margin-bottom: -15px;
+    margin-top: 25px;
+}
+
+.folio-button h2 {
+    padding-left: 80px;
+    color: #888C8E;
+}
+
+#run-buddy h2 {
+    padding-left: 40px;
+    color: #888C8E;
+}
+
+
+.folio-button button {
+    transition: 0.5s;
+}
+
+.folio-button button:hover {
+    transform: scale(0.95);
+}
+
+a {
+    display: inline-block;
+    line-height: -1;
+}
+
+/* BLOG STYLES */
+
+.wordpress {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--tertiary-color);
+    font-size: 25px;
+}
+
+.iframeurl {
+    margin-left: 19%;
+}
+
+.blog-url {
+    padding-left: 20px;
+}
+
+
+iframe {
+    border-radius: 5%;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-color: #f7ea5c;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10%;
+    width:1000px;
+    height: 300;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px) {
+    header {
+        width: 100%;
+    }
 
     .hero {
-        background-image: url(https://i.imgur.com/OnP3t0R.jpg);
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        background-attachment: fixed;
-        background-position: 100%;
-        background-position-y: 100%;
-        padding-bottom: 150px;
-    }
-    
-    .hero-blurb {
-        margin: 3.5%;
-        text-align: justify;
-        width: 45%;
-        padding: 20px 10px;
-    }
-    
-    .hero-blurb p {
-        line-height: 1.6;
-        font-size: 20px;
-    }
-    
-    .hero h1 {
-        font-size: 35px;
-        text-shadow: 2px 2px rgba(198, 226, 246, 0.5);
-    }
-    
-    aside img {
-        border-radius: 50%;
-        object-fit: cover;
-        height: 400px;
-        width: 400px;
-        object-position: 20% 1%;
-        padding: 50px;
-    }
-    
-    aside h1 {
-        position: relative;
-    }
-    
-    .hero-name {
-        position: absolute;
+        width: 100%;
     }
 
-    /* FOOTER & CONTACT STYLES */
-    
-    .contact-buttons {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0 700px 0 700px;
+    #my-work.folio-links1, #my-work2.folio-links2 {
+        display: inline-grid;
+        gap: 2rem;
+        grid-auto-flow: column;
+        margin-left: 10%;
     }
-    
-    .contact-buttons button {
-        border: none;
-        padding: 10px 20px;
-        background-color: transparent;
-        border-radius: 50%;
+
+    .folio-links1 img, .folio-links2 img {
+        max-width: 120px;
+        max-height: 120px;
     }
-    
-    .contact-logo {
-        max-width: 30px;
-        height: 30px;
+
+    #run-buddy h2 {
+        white-space: nowrap;
+        margin-left: -20%
+    }
+
+     .folio-links2 h2, .folio-links1 h2 {
+        font-size: 20px;
+        padding: 15px;
+        margin-left: 20%;
+    }
+
+    .iframeurl iframe {
+        max-width: 100%;
+        margin-left: -25%;
+    }
+
+    .blog-url h3 {
+        font-size: 20px;
     }
 
     .contact-info h3 {
-        color: #3B2020;
-        font-size: 25px;
-        text-align: center;
-        margin-top: 45px;
-        margin-bottom: 15px;
-        ;
+        margin-left: 4%;
     }
 
     .contact-buttons {
-        display: flex; 
-        justify-content: center;
+        margin-left: -20%;
+    } 
+}
+
+@media screen and (max-width: 625px) {
+
+    .hero h1{
+        margin-left: 10%;
     }
-    
-    .contact-buttons button:hover {
-        transform: scale(1.2);
-        transition: all ease 500ms;
+   .hero-blurb p{
+       margin-left: -50%;
+       margin-right: -50%;
+       margin-bottom: 10%;
+       margin-top: 10%;
+   }
+
+    .folio-links1 img, .folio-links2 img {
+        max-width: 75px;
+        max-height: 75px;
     }
 
-    /* PORTFOLIO LINK STYLES */
-    
-    .folio-links1, .folio-links2 {
-        margin: 0 200px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
-    .folio-button:hover .folio-button:focus .folio-button:active {
-        margin: 40px;
-        flex: 1.5;
-        background-color: #F6DAC6;
-    }
-    
-    .folio-button button {
-        border: none;
-        background-color: #F6DAC6;
-    }
-    
-    .folio-button img {
-        width: 200px;
-        height: 200px;
-        background-color: #F6DAC6;
-        margin-bottom: -15px;
-        margin-top: 25px;
-    }
-    
-    .folio-button h2 {
-        padding-left: 80px;
-        color: #888C8E;
-    }
-    
     #run-buddy h2 {
-        padding-left: 40px;
-        color: #888C8E;
+        font-size: 15px;
+        margin-left:-50%;
+    }
+
+    .folio-links2 h2, .folio-links1 h2 {
+        font-size: 15px;
+        margin-left: 13%;
+    }
+
+    #run-buddy {
+        max-width: 70px;
+    }
+
+    .contact-buttons {
+        margin-left: -60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-buttons {
+        margin-left: -90%
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contact-buttons {
+        margin-left: -135%
+    }
+
+    .folio-links1 img, .folio-links2 img {
+        max-width: 35px;
+        max-height: 35px;
+    }
+    .folio-links2 h2, .folio-links1 h2 {
+        font-size: 10px;
+        margin-left: -9%;
+    }
+
+    #run-buddy h2 {
+        font-size: 10px;
+        margin-left:-100%;
     }
     
-   
-    .folio-button button {
-        transition: 0.5s;
-    }
-    
-    .folio-button button:hover {
-        transform: scale(0.95);
-    }
-    
-    a {
-        display: inline-block;
-        line-height: -1;
+    #run-buddy {
+        max-width: 45px;
     }
 
-    /* BLOG STYLES */
-    
-    .wordpress {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        color: var(--tertiary-color);
-        font-size: 25px;
+    #my-work.folio-links1, #my-work2.folio-links2 {
+        display: inline-grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        margin-left: 10%;
     }
 
-    .iframeurl {
-        margin-left: 19%;
+    .hero {
+        background-position: 100%;
     }
 
-    .blog-url {
-        padding-left: 20px;
+    .hero-blurb p {
+        color: white;
     }
-    
-    
-    iframe {
-        border-radius: 5%;
-        justify-content: center;
-        margin-top: 45px;
-        margin-bottom: 45px;
-        border-color: #f7ea5c;
-        border-width: 10px;
-        border-style: solid;
-        border-radius: 10%;
-        width:1000px;
-        height: 300;
-    }
-
-    /* MEDIA QUERIES */
-
-    @media screen and (max-width: 980px) {
-        header {
-            width: 100%;
-        }
-
-        .hero {
-            width: 100%;
-        }
-
-        #my-work.folio-links1, #my-work2.folio-links2 {
-            display: inline-grid;
-            gap: 2rem;
-            grid-auto-flow: column;
-            margin-left: 10%;
-        }
-
-        .folio-links1 img, .folio-links2 img {
-            max-width: 120px;
-            max-height: 120px;
-        }
-
-        #run-buddy h2 {
-            white-space: nowrap;
-            margin-left: -20%
-        }
-
-         .folio-links2 h2, .folio-links1 h2 {
-            font-size: 20px;
-            padding: 15px;
-            margin-left: 20%;
-        }
-
-        .iframeurl iframe {
-            max-width: 100%;
-            margin-left: -25%;
-        }
-
-        .blog-url h3 {
-            font-size: 20px;
-        }
-
-        .contact-info h3 {
-            margin-left: 4%;
-        }
-
-        .contact-buttons {
-            margin-left: -20%;
-        } 
-    }
-
-    @media screen and (max-width: 625px) {
-
-        .hero h1{
-            margin-left: 10%;
-        }
-       .hero-blurb p{
-           margin-left: -50%;
-           margin-right: -50%;
-           margin-bottom: 10%;
-           margin-top: 10%;
-       }
-
-        .folio-links1 img, .folio-links2 img {
-            max-width: 75px;
-            max-height: 75px;
-        }
-
-        #run-buddy h2 {
-            font-size: 15px;
-            margin-left:-50%;
-        }
-
-        .folio-links2 h2, .folio-links1 h2 {
-            font-size: 15px;
-            margin-left: 13%;
-        }
-
-        #run-buddy {
-            max-width: 70px;
-        }
-
-        .contact-buttons {
-            margin-left: -60%;
-
-    }
-
-    @media screen and (max-width: 500px) {
-        .contact-buttons {
-            margin-left: -90%
-        }
-    }
-
-    @media screen and (max-width: 375px) {
-        .contact-buttons {
-            margin-left: -135%
-        }
-
-        .folio-links1 img, .folio-links2 img {
-            max-width: 35px;
-            max-height: 35px;
-        }
-        .folio-links2 h2, .folio-links1 h2 {
-            font-size: 10px;
-            margin-left: -9%;
-        }
-
-        #run-buddy h2 {
-            font-size: 10px;
-            margin-left:-100%;
-        }
-        #run-buddy {
-            max-width: 45px;
-        }
-
-        #my-work.folio-links1, #my-work2.folio-links2 {
-            display: inline-grid;
-            gap: 1rem;
-            grid-auto-flow: column;
-            margin-left: 10%;
-        }
-
-        .hero {
-            background-position: 100%;
-        }
-
-        .hero-blurb p {
-            color: white;
-        }
-
-    }
+}
