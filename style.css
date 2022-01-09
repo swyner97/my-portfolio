@@ -27,7 +27,7 @@
         flex-wrap: wrap;
         position: sticky;
         top: 0;
-        background-position: 50%;
+        background-position-y: 100%;
     }
     
     header h1 a {
@@ -69,6 +69,7 @@
         align-items: flex-start;
         background-attachment: fixed;
         background-position: 100%;
+        background-position-y: 100%;
         padding-bottom: 150px;
     }
     
@@ -81,6 +82,7 @@
     
     .hero-blurb p {
         line-height: 1.6;
+        font-size: 20px;
     }
     
     .hero h1 {
@@ -160,7 +162,6 @@
     }
     
     .contact-info h3 {
-        padding-left: 50px;
         color: #3B2020;
         font-size: 25px;
         text-align: center;
@@ -176,6 +177,11 @@
     .folio-button button:hover {
         transform: scale(0.95);
     }
+
+    .contact-buttons {
+        display: flex; 
+        justify-content: center;
+    }
     
     .contact-buttons button:hover {
         transform: scale(1.2);
@@ -189,20 +195,20 @@
     
     .wordpress {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
         color: var(--tertiary-color);
         font-size: 25px;
     }
-    
-    .blog-url h3 {
-        position: absolute;
-        padding: 25px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        padding: 75px;
-        margin: 70px;
-        left: -85px;
+
+    .iframeurl {
+        margin-left: 20%;
     }
+
+    .blog-url {
+        padding-left: 20px;
+    }
+    
     
     iframe {
         border-radius: 5%;
@@ -272,12 +278,12 @@
         }
     }
 
-    @media screen and (min-width: 375px) {
+    @media screen and (max-width: 375px) {
      .navbar {
         padding-right: 15%;
      }
 
-     #my-work.folio-links1, #my-work2.folio-links2, .iframeurl,{
+     #my-work.folio-links1, #my-work2.folio-links2, .iframeurl {
          padding-left: 50%;
          padding-left: 50%;
      }
