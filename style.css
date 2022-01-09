@@ -18,6 +18,7 @@
     /* HEADER / NAV BAR STYLES START */
     
     header {
+        width:100%;
         padding: 20px 35px;
         background-image: url(https://i.imgur.com/FsZJHl1.jpg);
         background-size: cover;
@@ -222,8 +223,113 @@
         width:1000px;
         height: 300;
     }
-    
+
     @media screen and (max-width: 980px) {
+        header {
+            width: 100%;
+        }
+
+        .hero {
+            width: 100%;
+        }
+
+        #my-work.folio-links1, #my-work2.folio-links2 {
+            display: inline-grid;
+            gap: 2rem;
+            grid-auto-flow: column;
+            margin-left: 10%;
+        }
+
+        .folio-links1 img, .folio-links2 img {
+            max-width: 120px;
+            max-height: 120px;
+        }
+
+        #run-buddy h2 {
+            white-space: nowrap;
+            margin-left: -20%
+        }
+
+         .folio-links2 h2, .folio-links1 h2 {
+            font-size: 20px;
+            padding: 15px;
+            margin-left: 20%;
+        }
+
+        .iframeurl iframe {
+            max-width: 100%;
+            margin-left: -25%;
+        }
+
+        .blog-url h3 {
+            font-size: 20px;
+        }
+
+        .contact-info h3 {
+            margin-left: 4%;
+        }
+
+        .contact-buttons {
+            margin-left: -20%;
+        } 
+    }
+
+    @media screen and (max-width: 625px) {
+
+        .hero h1{
+            margin-left: 10%;
+        }
+       .hero-blurb p{
+           margin-left: -50%;
+           margin-right: -50%;
+           margin-bottom: 10%;
+           margin-top: 10%;
+       }
+
+        .folio-links1 img, .folio-links2 img {
+            max-width: 75px;
+            max-height: 75px;
+        }
+
+        #run-buddy h2 {
+            font-size: 15px;
+            margin-left:-50%;
+        }
+
+        .folio-links2 h2, .folio-links1 h2 {
+            font-size: 15px;
+            margin-left: 13%;
+        }
+
+        #run-buddy {
+            max-width: 70px;
+        }
+
+        .contact-buttons {
+            margin-left: -60%;
+
+    }
+
+    @media screen and (max-width: 500px) {
+        .contact-buttons {
+            margin-left: -80%
+        }
+    }
+
+    @media screen and (max-width: 300px) {
+        .contact-buttons {
+            margin-left: -180%
+        }
+    }
+
+
+    /* @media screen and (min-width: 768px) {
+        header {
+            background-position-y: 100%;
+        }
+    } */
+    
+    /* @media screen and (min-width: 980px) {
         header {
             width: 180%;
             margin: -1%;
@@ -271,29 +377,32 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
-        .blog-url h3 {
-            top: 98%;
-            left: 57%;
-        }
-    }
 
-    @media screen and (min-width: 375px) {
+    @media screen and (max-width: 375px) {
+
+      header {
+          margin: 0;
+          width: 190%;
+      } 
+
+      .hero {
+          width: 190%;
+      }
+
      .navbar {
         margin-right: 15%;
      }
 
      #my-work.folio-links1, #my-work2.folio-links2 {
-         padding-left: 55%;
-         padding-left: 55%;
+         padding-left: 75%;
      }
 
      .iframeurl {
-         margin-left: -65%;
+         margin-left: -10%;
      }
 
      .contact-info {
-         padding-right: 10%;
+         padding-left: 40%;
      }
 
      .blog-url h3{
@@ -307,4 +416,4 @@
 
 
         
-    
+     */
